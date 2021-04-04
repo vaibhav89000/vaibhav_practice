@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -22,5 +22,9 @@ export class AppComponent implements OnInit {
 
   submit(){
     console.log(this.form.value);
+  }
+
+  tmpsubmit(tmpform){
+    console.log(tmpform.value);
   }
 }
